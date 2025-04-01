@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaClock, FaPhone, FaTooth } from "react-icons/fa";
+import { FaMapMarkerAlt, FaClock, FaTooth, FaParking, FaWheelchair, FaBus } from "react-icons/fa";
 
 export default function Location() {
   return (
@@ -23,46 +23,51 @@ export default function Location() {
             className="lg:w-1/3 space-y-6"
           >
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                <FaMapMarkerAlt className="text-teal-500" />
-                Dirección
-              </h3>
-              <p className="text-gray-600">
-                Avenida Francisco de Miranda, <br />
-                Hospital Ana Francisca Pérez de León, <br />
-                Caracas 1073, Distrito Capital
-              </p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <FaMapMarkerAlt className="text-teal-500" />
+            Dirección y Accesibilidad
+            </h3>
+            <p className="text-gray-600 mb-4">
+            Avenida Francisco de Miranda, Hospital Ana Francisca Pérez de León, Caracas.
+            </p>
+            <div className="space-y-2">
+            <p className="flex items-center gap-2 text-sm text-gray-500">
+                <FaParking className="text-teal-400" />
+                Estacionamiento gratuito
+            </p>
+            <p className="flex items-center gap-2 text-sm text-gray-500">
+                <FaWheelchair className="text-teal-400" />
+                Acceso para sillas de ruedas
+            </p>
+            <p className="flex items-center gap-2 text-sm text-gray-500">
+                <FaBus className="text-teal-400" />
+                Parada de autobús a 50m
+            </p>
+            </div>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                <FaClock className="text-teal-500" />
-                Horario
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex justify-between">
-                  <span>Lunes-Viernes:</span>
-                  <span>8:00 AM - 5:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sábados:</span>
-                  <span>9:00 AM - 1:00 PM</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                <FaPhone className="text-teal-500" />
-                Contacto
-              </h3>
-              <p className="text-gray-600 mb-2">+58 412-3456789</p>
-              <a 
-                href="https://wa.me/584123456789" 
-                className="inline-block bg-green-500 text-white px-4 py-2 rounded-lg text-sm mt-2"
-              >
-                WhatsApp <FaPhone className="inline ml-1" />
-              </a>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <FaClock className="text-teal-500" />
+            Horario y Disponibilidad
+            </h3>
+            <ul className="space-y-3 text-gray-600">
+            <li className="flex justify-between pb-2 border-b border-gray-200">
+                <span className="font-medium">Lunes-Viernes</span>
+                <span>8:00 AM - 5:00 PM</span>
+            </li>
+            <li className="flex justify-between pb-2 border-b border-gray-200">
+                <span className="font-medium">Sábados</span>
+                <span>9:00 AM - 1:00 PM</span>
+            </li>
+            <li className="flex justify-between">
+                <span className="font-medium">Emergencias</span>
+                <span className="text-teal-500">24/7</span>
+            </li>
+            </ul>
+            <p className="mt-4 text-sm text-gray-500">
+            * Tiempos de espera promedio: 15 minutos
+            </p>
             </div>
           </motion.div>
 

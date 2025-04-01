@@ -23,7 +23,7 @@ export default function MobileMenu() {
       {/* Botón Hamburguesa */}
       <button 
         onClick={toggleMenu}
-        className="fixed top-4 right-4 z-50 p-2 text-gray-800"
+        className="fixed top-2 right-4 z-50 p-2 text-gray-800"
         aria-label="Menú"
       >
         {isOpen ? (
